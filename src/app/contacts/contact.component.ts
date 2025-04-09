@@ -19,13 +19,9 @@ export class ContactComponent implements OnInit {
   contactsService = inject(ContactsService);
   contacts:Contact[]  = []
 
-  editSelf() {
-    
-  }
   removeSelf(){
     this.contactsService.removeContact(this.id)
   }
-
   ngOnInit(): void {
       this.contacts = this.contactsService.contacts
   }

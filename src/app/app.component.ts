@@ -7,7 +7,7 @@ import { EditContactComponent } from './edit-contact/edit-contact.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, ContactComponent, AddContactComponent,EditContactComponent],
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

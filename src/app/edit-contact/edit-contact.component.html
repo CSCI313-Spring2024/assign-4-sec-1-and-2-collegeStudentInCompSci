@@ -7,7 +7,7 @@
                     First Name:
                 </div>
                 <div class="col-sm-10">
-                    <input class="inputText" type="text">
+                    <input class="inputText" type="text" [(ngModel)]="fname">
                 </div>
             </div>
             <div class="row">
@@ -15,7 +15,7 @@
                     Last Name:
                 </div>
                 <div class="col-sm-10">
-                    <input class="inputText" type="text">
+                    <input class="inputText" type="text" [(ngModel)]="lname">
                 </div>
             </div>
             <div class="row">
@@ -23,11 +23,11 @@
                     Phone Number:
                 </div>
                 <div class="col-sm-10">
-                    <input class="inputText" type="text">
+                    <input class="inputText" type="text" [(ngModel)]="phone">
                 </div>
             </div>
             <button class="btn btn-primary" routerLink="">Cancel</button>
-            <button class="btn btn-primary" routerLink="">Commit</button>
+            <button class="btn btn-primary" (click)="commitChanges()" routerLink="">Commit</button>
         </div>
     </div>
 </div>
