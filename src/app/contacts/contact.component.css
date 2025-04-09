@@ -1,0 +1,12 @@
+.container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.container2 {
+    margin: 1rem;
+}
+.btn {
+    float: right;
+    border-radius: 1rem;
+    margin: .25rem;
+}
