@@ -10,17 +10,12 @@ import { Contact } from '../contact';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent implements OnInit {
-  @Input() fname!:string;
-  @Input() lname!:string;
-  @Input() phone!:string;
-  @Input() id!:number;
-
 
   contactsService = inject(ContactsService);
   contacts:Contact[]  = []
 
-  removeSelf(){
-    this.contactsService.removeContact(this.id)
+  removeSelf(id : number){
+    this.contactsService.removeContact(id)
   }
   ngOnInit(): void {
       this.contacts = this.contactsService.contacts
